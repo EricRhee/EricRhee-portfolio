@@ -1,4 +1,7 @@
 import Clock from "./Clock"
+import { GrStatusGoodSmall } from "react-icons/gr";
+import { FaLocationArrow } from "react-icons/fa";
+import { IoAirplaneSharp } from "react-icons/io5";
 
 export default function Header() {
   return (
@@ -7,19 +10,22 @@ export default function Header() {
         
         {/* Logo / Name */}
         <div className = "flex gap-4 items-center">
-            <p className="text-white border px-4 py-1">
+            <p className="flex items-center gap-2 text-white border px-4 py-1">
+               <GrStatusGoodSmall />
                 Open To Work
             </p>
             <p className="text-white">
                 |
             </p>
-            <p className="text-white">
+            <p className="flex items-center gap-2 text-white">
+               <FaLocationArrow />
                 Newport Beach, CA
             </p>
             <p className="text-white">
                 |
             </p>
-            <p className="text-white">
+            <p className="flex items-center gap-2 text-white">
+               <IoAirplaneSharp />
                 Relocate OK
             </p>
         </div>

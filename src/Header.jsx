@@ -2,6 +2,8 @@ import Clock from "./Clock"
 import { GrStatusGoodSmall } from "react-icons/gr";
 import { FaLocationArrow } from "react-icons/fa";
 import { IoAirplaneSharp } from "react-icons/io5";
+import Lottie from "lottie-react"
+
 
 export default function Header() {
   return (
@@ -11,7 +13,7 @@ export default function Header() {
         {/* Logo / Name */}
         <div className = "flex gap-4 items-center">
             <p className="flex items-center gap-2 text-white border px-4 py-1">
-               <GrStatusGoodSmall />
+               <GrStatusGoodSmall className="text-green-400 drop-shadow-[0_0_6px_#4ade80]"/>
                 Open To Work
             </p>
             <p className="text-white">
